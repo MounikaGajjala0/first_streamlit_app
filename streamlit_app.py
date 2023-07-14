@@ -63,6 +63,10 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
+streamlit.header("what fruit would you like to add")
+add_my_fruit = streamlit.singleselect("pick one fruit:", ['jackfruit'])
+sreamlit.text = Thanks for adding jackfruit
+
 
 
 
